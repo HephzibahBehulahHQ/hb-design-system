@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "brandKey": "elektroniker",
+  "product": {
+    "name": "AdigunSPs",
+    "description": "PLC programming application",
+    "repository": "HephzibahBehulah/VoltPro-AdigunSPs",
+    "logoAsset": null
+  },
+  "features": {
+    "languages": [
+      "en",
+      "de",
+      "yo",
+      "pcm"
+    ],
+    "defaultLanguage": "en",
+    "themeSwitcher": true,
+    "adigunBot": {
+      "enabled": true,
+      "displayName": "Adigun BOT",
+      "mode": "product-aware",
+      "actionsRequireConfirmation": true
+    }
+  },
+  "links": {
+    "documentation": null,
+    "support": null
+  },
+  "integrations": {
+    "assistantEndpoint": null,
+    "productActionAdapter": null
+  }
+}
