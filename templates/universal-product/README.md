@@ -27,3 +27,16 @@ For circuit simulation, the simulator must define a canonical circuit document s
 5. Migrate existing products on branches, test, then deploy with approval.
 
 No AI backend, working assistant, translation bundle or circuit import integration is included in this configuration-only foundation.
+
+
+## Repository ownership and safe continuation
+The `product.repository` field is the exclusive destination for that product's application code, tests, docs and deployment workflows. `references` identifies read-only branding references, not code destinations. For existing products, inspect the **local working tree first**; it may contain unpushed work not visible on GitHub. Back up the local source and important untracked files, preserve history, and migrate incrementally. Never re-clone over local work or force-push. Verify the destination repository exists or create it only with proper organization permissions. Confirm the remote commit after pushing.
+
+## Accounts, guest sessions and persistence
+The sample `product.config.json` now demonstrates **AdigunSPs-specific** account and storage requirements. These are configurable capabilities, **not mandatory features for every Hephzibah Behulah product**. When enabled, use real email/password authentication, secure profile/avatar handling, trusted server-side roles, private owner-scoped project access and validated local/cloud save/reopen. For the AdigunSPs example, guest access lasts 10 minutes; guests cannot permanently save but must not lose their temporary work during login. Enforce guest restrictions with suitable server-side controls and do not treat a frontend timer as secure access control. Use Supabase RLS and storage policies, secure Cloudflare deployment as appropriate, and never embed secret keys. No Supabase schema, Cloudflare deployment or authentication code is provided by this template.
+
+## Functional engineering acceptance
+All visible controls must perform real supported actions. Components need verified identities, meaningful editable properties, valid terminals and persistent connections. Check responsive layouts for overlaps and overflow in all four languages. Product-specific validation belongs in the product repository: AdigunSPs requires PLC instruction, variable, wiring and simulation tests and individually validated **200 example projects**. Do not claim 200/200 passed without per-project evidence. These PLC-specific requirements do not apply to unrelated product types.
+
+## Final delivery
+Document only verified features in a comprehensive product README, including setup, architecture, security, known limitations, test evidence and deployment. A passing build does not substitute for functional testing. Commit and push to the dedicated product repository and verify the resulting remote SHA. Never describe a configuration-only design-system template as a deployed application.
