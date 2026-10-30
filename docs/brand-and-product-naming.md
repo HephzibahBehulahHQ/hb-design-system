@@ -25,7 +25,7 @@ Mandatory languages: English (en), German (de), Yoruba (yo), Nigerian Pidgin (pc
 - X: https://x.com/HephzibaBehulah
 - LinkedIn: https://www.linkedin.com/in/isaacoluwoleadigun/ (personal profile; label accordingly)
 - TikTok: https://www.tiktok.com/@hephzibahbhehulah (owner-provided URL)
-- Instagram: https://www.instagram.com/hephzibahbehula (owner-provided URL)
+- Instagram: https://www.instagram.com/hephzibahbehulah (owner-provided URL)
 
 ## Scope
 These rules govern new product designs and future approved migrations. They do not themselves implement UI components, logos, localization or AI functionality. Existing product functionality and deployments must remain intact.
