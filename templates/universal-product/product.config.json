@@ -30,5 +30,19 @@
   "integrations": {
     "assistantEndpoint": null,
     "productActionAdapter": null
+  },
+  "branding": {
+    "logoPolicy": "single-corporate-logo",
+    "corporateLogo": {
+      "asset": "assets/corporate/hephzibah-behulah-official.jpg",
+      "status": "awaiting-upload",
+      "source": "user-supplied official logo image",
+      "alt": "Hephzibah Behulah"
+    },
+    "header": {
+      "productWordmark": true,
+      "divisionTextLabel": true,
+      "additionalBrandLogos": false
+    }
   }
 }
