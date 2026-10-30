@@ -35,7 +35,7 @@
     "logoPolicy": "single-corporate-logo",
     "corporateLogo": {
       "asset": "assets/corporate/hephzibah-behulah-official.jpg",
-      "status": "awaiting-upload",
+      "status": "uploaded",
       "source": "user-supplied official logo image",
       "alt": "Hephzibah Behulah"
     },
