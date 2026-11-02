@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 3,
+  "exampleFor": "AdigunSPs",
+  "brandKey": "elektroniker",
+  "product": {
+    "name": "AdigunSPs",
+    "description": "PLC programming application",
+    "repository": "HephzibahBehulahHQ/AdigunSPs",
+    "legacyRepository": "HephzibahBehulah/VoltPro-AdigunSPs"
+  },
+  "references": {
+    "corporateWebsiteRepository": "HephzibahBehulahHQ/HephzibahBehulahHQ.github.io",
+    "designSystemRepository": "HephzibahBehulahHQ/hb-design-system",
+    "divisionRepository": "HephzibahBehulahHQ/hb-elektroniker"
+  },
+  "features": {
+    "languages": ["en", "de", "yo", "pcm"],
+    "defaultLanguage": "en",
+    "themeSwitcher": true,
+    "adigunBot": {
+      "enabled": true,
+      "displayName": "Adigun BOT",
+      "mode": "product-aware",
+      "actionsRequireConfirmation": true
+    },
+    "accounts": {
+      "enabled": true,
+      "provider": "supabase",
+      "emailPassword": true,
+      "profileAvatar": true,
+      "guestAccess": {
+        "enabled": true,
+        "trialMinutes": 10,
+        "permanentSaving": false
+      }
+    },
+    "projects": {
+      "localSaving": true,
+      "cloudSaving": true,
+      "ownerScopedAccess": true
+    },
+    "administration": {
+      "owner": "Hephzibah Behulah",
+      "serverAuthorizedRoles": true
+    }
+  },
+  "links": {
+    "documentation": null,
+    "support": null
+  },
+  "integrations": {
+    "assistantEndpoint": null,
+    "productActionAdapter": null,
+    "supabaseProject": null,
+    "cloudflareDeployment": null
+  },
+  "branding": {
+    "logoPolicy": "single-corporate-logo",
+    "corporateLogo": {
+      "asset": "assets/corporate/hephzibah-behulah-official.jpg",
+      "status": "uploaded",
+      "source": "user-supplied official logo image",
+      "alt": "Hephzibah Behulah"
+    },
+    "header": {
+      "productWordmark": true,
+      "divisionTextLabel": true,
+      "additionalBrandLogos": false,
+      "profilePosition": "top-right"
+    }
+  }
+}

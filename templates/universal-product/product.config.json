@@ -1,43 +1,46 @@
 {
-  "schemaVersion": 2,
-  "brandKey": "elektroniker",
+  "schemaVersion": 3,
+  "brandKey": null,
   "product": {
-    "name": "AdigunSPs",
-    "description": "PLC programming application",
-    "repository": "HephzibahBehulahHQ/AdigunSPs",
-    "legacyRepository": "HephzibahBehulah/VoltPro-AdigunSPs"
+    "name": null,
+    "description": null,
+    "repository": null,
+    "legacyRepository": null
   },
   "references": {
     "corporateWebsiteRepository": "HephzibahBehulahHQ/HephzibahBehulahHQ.github.io",
     "designSystemRepository": "HephzibahBehulahHQ/hb-design-system",
-    "divisionRepository": "HephzibahBehulahHQ/hb-elektroniker"
+    "divisionRepository": null
   },
   "features": {
     "languages": ["en", "de", "yo", "pcm"],
     "defaultLanguage": "en",
-    "themeSwitcher": true,
+    "themeSwitcher": false,
     "adigunBot": {
-      "enabled": true,
+      "enabled": false,
       "displayName": "Adigun BOT",
-      "mode": "product-aware",
+      "mode": null,
       "actionsRequireConfirmation": true
     },
     "accounts": {
-      "enabled": true,
-      "provider": "supabase",
-      "emailPassword": true,
-      "profileAvatar": true,
-      "guestTrialMinutes": 10,
-      "guestPermanentSaving": false
+      "enabled": false,
+      "provider": null,
+      "emailPassword": false,
+      "profileAvatar": false,
+      "guestAccess": {
+        "enabled": false,
+        "trialMinutes": null,
+        "permanentSaving": false
+      }
     },
     "projects": {
-      "localSaving": true,
-      "cloudSaving": true,
-      "ownerScopedAccess": true
+      "localSaving": false,
+      "cloudSaving": false,
+      "ownerScopedAccess": false
     },
     "administration": {
       "owner": "Hephzibah Behulah",
-      "serverAuthorizedRoles": true
+      "serverAuthorizedRoles": false
     }
   },
   "links": {

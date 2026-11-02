@@ -1,102 +1,39 @@
-
 # Hephzibah Behulah — Design System
 
-## Overview
+The canonical visual and reusable-component standard for the five Hephzibah Behulah divisions.
 
-The official design system for Hephzibah Behulah,
-the parent company of five independent brands.
+## Authority boundaries
 
-This repository manages the shared visual identity,
-design standards, reusable components and brand
-assets used across our corporate and product websites.
+- [hb-AI-policy](https://github.com/HephzibahBehulahHQ/hb-AI-policy) owns global AI-agent governance, security, testing, cloud execution and collaboration.
+- This repository owns visual tokens, official assets, reusable UI standards, product templates and the Adigun BOT component standard.
+- Division repositories own their domain guidance; product repositories own application code, product-specific requirements, tests and deployments.
 
-## Corporate Brand Identity
+## Corporate identity
 
-**Company:** Hephzibah Behulah
+The existing corporate tokens and approved assets remain authoritative and unchanged. Do not create, replace or modify official visual identity assets without explicit authorization.
 
-**Brand Philosophy:**
-Faith • Innovation • Intelligence • Leadership
-
-**Corporate Colors:**
-
-| Color | HEX |
-|---|---|
-| Midnight Navy | `#0B1220` |
-| Royal Blue | `#2563EB` |
-| Metallic Gold | `#D4AF37` |
-| Ivory White | `#F8FAFC` |
-
-## Our Five Brands
-
-| Brand | Accent Color | HEX |
-|---|---|---|
-| ⚡ Elektroniker | Electric Cyan | `#22D3EE` |
-| 📈 Trading | Emerald Green | `#22C55E` |
-| 🤖 Artificial Intelligence | Violet | `#A78BFA` |
-| ✝️ Evangelism | Metallic Gold | `#D4AF37` |
-| 🏛️ Politics | Copper Orange | `#F97316` |
-
-## Design System Responsibilities
-
-- Corporate and divisional logos
-- Brand color palettes
-- Typography and spacing
-- Light and dark themes
-- Reusable UI components
-- Responsive design standards
-- Accessibility guidelines
-- Shared SVG icons
-- Component documentation
-- Versioned design packages
-
-## Architecture Rules
-
-1. All five brands inherit the corporate design
-   foundations.
-
-2. Each brand may have its own accent colors and
-   specialized interface components.
-
-3. Product-specific application logic must remain
-   inside its own product repository.
-
-4. Shared components must be documented and tested.
-
-5. Breaking changes require a new major version.
-
-6. Products must explicitly adopt new design-system
-   versions before deployment.
-
-7. Existing working applications must not be broken
-   by design-system updates.
-
-## Planned Repository Structure
+## Current repository structure
 
 ```text
-hb-design-system/
-├── assets/
-│   ├── logos/
-│   └── icons/
-├── src/
-│   ├── tokens/
-│   ├── themes/
-│   └── components/
-├── docs/
-├── README.md
-└── package.json
+assets/corporate/                 approved corporate asset and handling guidance
+tokens/                           corporate and division color tokens
+components/AdigunBot/             reusable floating-copilot standards
+templates/universal-product/      product-neutral configuration contract and examples
+docs/                             naming and supporting standards
+AGENTS.md                         repository-scoped instructions
 ```
 
-The folders and package files will be created
-when development begins.
+## Key documents
 
-## Development Status
+- [Agent guidance](AGENTS.md)
+- [Brand and product naming](docs/brand-and-product-naming.md)
+- [Adigun BOT component standard](components/AdigunBot/README.md)
+- [Universal product template](templates/universal-product/README.md)
 
-**Current Phase:** Initial design-system planning.
+## Architecture rules
 
-## Ownership
-
-Maintained by Hephzibah Behulah.
-
-© Hephzibah Behulah.
-All rights reserved, except where otherwise licensed.
-
+1. All five divisions inherit the corporate visual foundation.
+2. A division may apply its approved accent color and appropriate specialized components.
+3. Product application logic stays in its dedicated product repository.
+4. Shared components must be documented and tested in the consuming product.
+5. Products adopt design-system changes explicitly; no existing working product is changed by documentation alone.
